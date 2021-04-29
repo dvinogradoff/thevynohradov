@@ -1,0 +1,136 @@
+html,
+body {
+  font-family: YSText;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  background-color: #2d2838;
+  font-size: medium;
+  font-weight: 400;
+  -webkit-font-smoothing: subpixel-antialiased;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+header {
+  font-size: 1.5rem;
+}
+main {
+  background-color: #ffffff;
+  color: black;
+  font-size: 1.2rem;
+}
+footer {
+  font-size: 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 5px;
+  padding: 5px;
+}
+div {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+div.centered {
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  min-width: 50%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
+/* 
+
+    Id для панели тегов
+
+ */
+#tags li {
+  padding: 1rem;
+  margin-bottom: 1vh;
+  font-size: 1rem;
+  display: inline-flex; /* Отображать как блочно-строчный элемент */
+  color: greenyellow;
+  border: 1px solid dimgray;
+}
+#tags li:hover {
+  border: 2px solid red;
+  font-size: 1.2rem;
+  transition: 1s all;
+}
+#tags a {
+  color: darkorange;
+}
+/* 
+
+    Id для панели навигации
+    через display:inline
+
+ */
+#horiz_nav {
+  background-color: #383342;
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+#horiz_nav li {
+  display: inline-flex;
+  padding: 15px;
+}
+#horiz_nav li:not(#horiz_nav_current):hover {
+  transition: 0.5s all;
+  font-weight: 600;
+  border-bottom: 5px solid lawngreen;
+}
+#horiz_nav_current {
+  border-bottom: 5px solid orange;
+}
+#horiz_nav_current:hover {
+  transition: 0.5s all;
+  border-bottom: 5px solid red;
+}
+
+/* 
+
+    Id для панели навигации 
+    через float
+
+ */
+
+/* ul.nav {
+  margin-left: 0px;
+  padding-left: 0px;
+  list-style: none;
+}
+.nav li {
+  float: left;
+}
+ul.nav a {
+  display: block;
+  width: 5em;
+  padding: 10px;
+  margin: 0 5px;
+  background-color: #f4f4f4;
+  border: 1px dashed #333;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+}
+ul.nav a:hover {
+  background-color: #333;
+  color: #f4f4f4;
+} */
