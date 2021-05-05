@@ -82,24 +82,29 @@ a:hover {
     через display:inline
 
  */
-#horiz_nav {
+#head_horiz_nav {
   background-color: #383342;
   font-size: 1.3rem;
   color: #ffffff;
 }
-#horiz_nav li {
+#head_horiz_nav li {
   display: inline-flex;
   padding: 15px;
 }
-#horiz_nav li:not(#horiz_nav_current):hover {
+#head_horiz_nav
+  li:not(#head_horiz_nav_current):not(#head_horiz_nav_logo):hover {
   transition: 0.5s all;
   font-weight: 600;
   border-bottom: 5px solid lawngreen;
 }
-#horiz_nav_current {
+#head_horiz_nav_logo {
+  height: 7rem;
+  width: 7rem;
+}
+#head_horiz_nav_current {
   border-bottom: 5px solid orange;
 }
-#horiz_nav_current:hover {
+#head_horiz_nav_current:hover {
   transition: 0.5s all;
   border-bottom: 5px solid red;
 }
@@ -134,3 +139,51 @@ ul.nav a:hover {
   background-color: #333;
   color: #f4f4f4;
 } */
+
+/* 
+
+    Id для нижней панели навигации 
+    через inline
+
+ */
+
+#foot_horiz_nav {
+  background-color: #383342;
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+#foot_horiz_nav li:not(#foot_horiz_nav_general) {
+  display: inline-flex;
+  padding: 15px;
+}
+#foot_horiz_nav_general {
+  display: inline-block;
+}
+#foot_horiz_nav_general p {
+  font-size: 0.8rem;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+#foot_horiz_nav
+  li:not(#foot_horiz_nav_logo):not(#foot_horiz_nav_general):hover {
+  transition: 0.5s all;
+  font-weight: 600;
+}
+#foot_horiz_nav_fb:hover {
+  color: #1977f3;
+}#foot_horiz_nav_tg:hover {
+  color: #229edb;
+}
+#foot_horiz_nav_tw:hover {
+  color: #1da1f3;
+}
+#foot_horiz_nav_vk:hover {
+  color: #2787f5;
+}
+#foot_horiz_nav_od:hover {
+  color: #ee8206;
+}
+#foot_horiz_nav_logo {
+  height: 7rem;
+  width: 7rem;
+}
